@@ -10,13 +10,11 @@
         <meta name="author" content="Jiang Le">
       
       
-        <link rel="canonical" href="https://Fleur-de-lis-jbs.github.io/blog/2025.12.11-setup-robot-env/">
+        <link rel="canonical" href="https://Fleur-de-lis-jbs.github.io/blog/2025.12.12-ros%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../2025.12.11-%E5%A6%82%E4%BD%95%E5%8F%91%E5%B8%83%E5%8D%9A%E5%AE%A2/">
       
-      
-        <link rel="next" href="../2025.12.11-%E5%A6%82%E4%BD%95%E5%8F%91%E5%B8%83%E5%8D%9A%E5%AE%A2/">
       
       
         
@@ -27,7 +25,7 @@
     
     
       
-        <title>零基础搭建人形机器人开发环境 (WSL2 + MuJoCo) - Jiang Le's Lab</title>
+        <title>ros系统配置 - Jiang Le's Lab</title>
       
     
     
@@ -78,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#ros" class="md-skip">
           跳转至
         </a>
       
@@ -112,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              零基础搭建人形机器人开发环境 (WSL2 + MuJoCo)
+              ros系统配置
             
           </span>
         </div>
@@ -399,37 +397,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    零基础搭建人形机器人开发环境 (WSL2 + MuJoCo)
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../2025.12.11-setup-robot-env/" class="md-nav__link">
         
   
   
@@ -445,81 +416,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#wsl2-ubuntu" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        一、 基础架构：WSL2 与 Ubuntu 安装
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#wslconfig" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        二、 核心优化：配置镜像网络 (.wslconfig)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#miniconda" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        三、 环境管理：Miniconda 与源优化
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        四、 深度学习与仿真环境搭建
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        五、 验证
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -557,10 +453,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../2025.12.12-ros%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ros系统配置
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -576,6 +499,70 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ros_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、一键安装ROS
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、创建环境以及基础库的安装
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、编写一个仿真脚本已验证功能
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、遇到的问题
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -643,10 +630,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#wsl2-ubuntu" class="md-nav__link">
+  <a href="#ros_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        一、 基础架构：WSL2 与 Ubuntu 安装
+        一、一键安装ROS
       
     </span>
   </a>
@@ -654,21 +641,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#wslconfig" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        二、 核心优化：配置镜像网络 (.wslconfig)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#miniconda" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        三、 环境管理：Miniconda 与源优化
+        二、创建环境以及基础库的安装
       
     </span>
   </a>
@@ -679,7 +655,7 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        四、 深度学习与仿真环境搭建
+        三、编写一个仿真脚本已验证功能
       
     </span>
   </a>
@@ -690,7 +666,7 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        五、 验证
+        四、遇到的问题
       
     </span>
   </a>
@@ -714,117 +690,127 @@
 
 
 
-<h1 id="_1">零基础搭建人形机器人开发环境指南</h1>
-<p>最近加入了学校的人形机器人课题组，第一步进行环境配置。
-人形机器人开发通常依赖 Linux 环境，但为了兼顾日常学业，我选择了 Windows Subsystem for Linux (WSL2) 方案。本文记录了如何在 Windows 11 下，一步步搭建支持 GPU 加速和图形化仿真 (GUI) 的开发环境。</p>
-<h2 id="wsl2-ubuntu">一、 基础架构：WSL2 与 Ubuntu 安装</h2>
-<p><strong>1. 启用 WSL2</strong>
-WSL2 允许我们在 Windows 中原生运行 Linux 内核，性能远超虚拟机。
-在 PowerShell (管理员) 中输入：</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">wsl</span> <span class="p">-</span><span class="n">-install</span>
+<h1 id="ros">ROS系统安装配置过程</h1>
+<p>我现有的配置是Windows 11 + WSL 2 (Ubuntu 22.04)，目标是人形机器人（上肢）仿真</p>
+<h2 id="ros_1">一、一键安装ROS</h2>
+<p>使用国内社区维护的“鱼香ROS”一键安装脚本
+终端运行
+<code>wget http://fishros.com/install -O fishros &amp;&amp; . fishros</code>
+可能遇到的问题：
+1.系统提示需要换源
+选择换源（由于我默认是清华源，没有换源）
+2.选择ROS镜像源
+选择（1）中科大镜像源</p>
+<p>脚本安装的是 ROS 2 (Humble)，而非旧版ROS 1。安装完成后，脚本已自动帮我把环境变量配置写入 ~/.bashrc</p>
+<h2 id="_1">二、创建环境以及基础库的安装</h2>
+<p>利用已经下载好的miniconda管理环境
+<code># 创建环境conda create -n humanoid python=3.8</code>
+然后激活环境
+<code>conda activate humanoid</code>
+安装torch等基础库
+<code>pip install numpy torch torchvision</code>
+安装pybullet
+<code>pip install pybullet</code>
+安装底层图形库
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo apt-get update
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo apt-get install -y libgl1-mesa-glx libglib2.0-0
 </code></pre></div>
-<p>重启电脑后，在微软应用商店 (Microsoft Store) 搜索并安装 <strong>Ubuntu 22.04.5 LTS</strong>。</p>
-<p><strong>2. 初始化系统</strong>
-打开 Ubuntu 终端，设置用户名和密码。随后更换国内源（阿里云）以加速下载：</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># 备份原源</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>sudo<span class="w"> </span>cp<span class="w"> </span>/etc/apt/sources.list<span class="w"> </span>/etc/apt/sources.list.bak
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1"># 替换为阿里云源</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>sudo<span class="w"> </span>sed<span class="w"> </span>-i<span class="w"> </span><span class="s1">&#39;s/archive.ubuntu.com/mirrors.aliyun.com/g&#39;</span><span class="w"> </span>/etc/apt/sources.list
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>sudo<span class="w"> </span>sed<span class="w"> </span>-i<span class="w"> </span><span class="s1">&#39;s/security.ubuntu.com/mirrors.aliyun.com/g&#39;</span><span class="w"> </span>/etc/apt/sources.list
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="c1"># 更新系统并安装基础工具</span>
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>upgrade<span class="w"> </span>-y
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>build-essential<span class="w"> </span>git<span class="w"> </span>curl<span class="w"> </span>vim<span class="w"> </span>-y
+验证功能
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>import pybullet as p
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>print(p.getAPIVersion()) # 能打印出版本号即成功
 </code></pre></div>
-<h2 id="wslconfig">二、 核心优化：配置镜像网络 (.wslconfig)</h2>
-<p>这是最关键的一步。为了解决 WSL2 连接 VPN 困难以及与 Windows 网络隔离的问题，我开启了 <strong>Mirrored (镜像网络)</strong> 模式。</p>
-<p>在 Windows 下，新建文件 <code>C:\Users\&lt;你的用户名&gt;\.wslconfig</code>，写入以下内容：</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">[wsl2]</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="na">networkingMode</span><span class="o">=</span><span class="s">mirrored</span>
+环境最终校验
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>echo &quot;=== 系统与Python ===&quot;
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>lsb_release -d
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>python3 --version
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>echo -e &quot;\n=== 关键Python库 ===&quot;
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>pip list | grep -E &quot;(numpy|torch|pybullet)&quot;
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>echo -e &quot;\n=== ROS 2 环境 ===&quot;
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>echo $ROS_DISTRO
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>ros2 --version 2&gt;/dev/null &amp;&amp; echo &quot;ROS 2 OK&quot; || echo &quot;ROS 2 Not Found&quot;
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>echo -e &quot;\n=== PyBullet 测试 ===&quot;
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>python3 -c &quot;import pybullet as p; print(&#39;PyBullet API Version:&#39;, p.getAPIVersion())&quot;
 </code></pre></div>
-<p>然后重启 WSL 使配置生效：</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">wsl</span> <span class="p">-</span><span class="n">-shutdown</span>
+输出都正常则配置完毕</p>
+<h2 id="_2">三、编写一个仿真脚本已验证功能</h2>
+<p>我一开始是利用ai写的脚本，想要调用一个UR5的机械臂，但是pybullet自带的data库里没有UR5，于是改用调用kuka_iiwa
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>import pybullet as p
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>import pybullet_data
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>import time
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>import numpy as np
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>def main():
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    print(&quot;=&quot;*60)
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    print(&quot;开始最终仿真环境验收测试&quot;)
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    print(&quot;=&quot;*60)
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>    # 1. 连接引擎，兼容无图形界面情况
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>    try:
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>        physicsClient = p.connect(p.GUI)
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>        print(&quot;[INFO] 图形模式 (GUI) 已启动。&quot;)
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>    except Exception:
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>        print(&quot;[INFO] 图形模式失败，切换到直接计算模式 (DIRECT)。&quot;)
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>        physicsClient = p.connect(p.DIRECT)
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>    # 2. 配置路径和场景
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>    p.setAdditionalSearchPath(pybullet_data.getDataPath())
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>    p.setGravity(0, 0, -9.8)
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>    p.loadURDF(&quot;plane.urdf&quot;)
+<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>    print(&quot;[INFO] 地面加载完成。&quot;)
+<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>
+<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>    # 3. 加载一个确定存在的机器人模型
+<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>    robot_urdf = &quot;kuka_iiwa/model.urdf&quot;  # 核心：使用已验证存在的模型
+<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>    print(f&quot;[INFO] 正在加载模型: {robot_urdf}&quot;)
+<a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a>    robot_id = p.loadURDF(robot_urdf, basePosition=[0, 0, 0])
+<a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a>    num_joints = p.getNumJoints(robot_id)
+<a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a>    print(f&quot;[SUCCESS] 模型加载成功！关节数: {num_joints}&quot;)
+<a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a>
+<a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a>    # 4. 进行简单的运动测试
+<a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a>    print(&quot;[INFO] 开始随机运动测试...&quot;)
+<a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a>    for _ in range(100):
+<a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a>        for j in range(num_joints):
+<a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a>            if p.getJointInfo(robot_id, j)[2] != p.JOINT_FIXED:
+<a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a>                target = np.random.uniform(-1.0, 1.0)
+<a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a>                p.setJointMotorControl2(robot_id, j,
+<a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a>                                        p.POSITION_CONTROL,
+<a id="__codelineno-3-40" name="__codelineno-3-40" href="#__codelineno-3-40"></a>                                        targetPosition=target,
+<a id="__codelineno-3-41" name="__codelineno-3-41" href="#__codelineno-3-41"></a>                                        force=50)
+<a id="__codelineno-3-42" name="__codelineno-3-42" href="#__codelineno-3-42"></a>        p.stepSimulation()
+<a id="__codelineno-3-43" name="__codelineno-3-43" href="#__codelineno-3-43"></a>        time.sleep(1./240.)
+<a id="__codelineno-3-44" name="__codelineno-3-44" href="#__codelineno-3-44"></a>
+<a id="__codelineno-3-45" name="__codelineno-3-45" href="#__codelineno-3-45"></a>    # 5. 保存测试结果截图（即使无GUI也尝试）
+<a id="__codelineno-3-46" name="__codelineno-3-46" href="#__codelineno-3-46"></a>    print(&quot;[INFO] 测试完成，尝试保存截图...&quot;)
+<a id="__codelineno-3-47" name="__codelineno-3-47" href="#__codelineno-3-47"></a>    try:
+<a id="__codelineno-3-48" name="__codelineno-3-48" href="#__codelineno-3-48"></a>        view_matrix = p.computeViewMatrixFromYawPitchRoll(
+<a id="__codelineno-3-49" name="__codelineno-3-49" href="#__codelineno-3-49"></a>            cameraTargetPosition=[0,0,0.5], distance=1.5, yaw=60, pitch=-30, roll=0, upAxisIndex=2)
+<a id="__codelineno-3-50" name="__codelineno-3-50" href="#__codelineno-3-50"></a>        proj_matrix = p.computeProjectionMatrixFOV(fov=60, aspect=1.33, nearVal=0.1, farVal=100.0)
+<a id="__codelineno-3-51" name="__codelineno-3-51" href="#__codelineno-3-51"></a>        width, height = 640, 480
+<a id="__codelineno-3-52" name="__codelineno-3-52" href="#__codelineno-3-52"></a>        img = p.getCameraImage(width, height, view_matrix, proj_matrix,
+<a id="__codelineno-3-53" name="__codelineno-3-53" href="#__codelineno-3-53"></a>                               renderer=p.ER_BULLET_HARDWARE_OPENGL)
+<a id="__codelineno-3-54" name="__codelineno-3-54" href="#__codelineno-3-54"></a>        # 此处可添加用PIL或OpenCV保存img[2]（RGB数组）的代码
+<a id="__codelineno-3-55" name="__codelineno-3-55" href="#__codelineno-3-55"></a>        print(f&quot;[SUCCESS] 截图已渲染，可保存。&quot;)
+<a id="__codelineno-3-56" name="__codelineno-3-56" href="#__codelineno-3-56"></a>    except Exception as e:
+<a id="__codelineno-3-57" name="__codelineno-3-57" href="#__codelineno-3-57"></a>        print(f&quot;[NOTE] 未保存截图: {e}&quot;)
+<a id="__codelineno-3-58" name="__codelineno-3-58" href="#__codelineno-3-58"></a>
+<a id="__codelineno-3-59" name="__codelineno-3-59" href="#__codelineno-3-59"></a>    # 6. 清理与退出
+<a id="__codelineno-3-60" name="__codelineno-3-60" href="#__codelineno-3-60"></a>    p.disconnect()
+<a id="__codelineno-3-61" name="__codelineno-3-61" href="#__codelineno-3-61"></a>    print(&quot;=&quot;*60)
+<a id="__codelineno-3-62" name="__codelineno-3-62" href="#__codelineno-3-62"></a>    print(&quot;环境验收测试全部通过！&quot;)
+<a id="__codelineno-3-63" name="__codelineno-3-63" href="#__codelineno-3-63"></a>    print(&quot;你的机器人仿真环境已完全就绪。&quot;)
+<a id="__codelineno-3-64" name="__codelineno-3-64" href="#__codelineno-3-64"></a>    print(&quot;=&quot;*60)
+<a id="__codelineno-3-65" name="__codelineno-3-65" href="#__codelineno-3-65"></a>
+<a id="__codelineno-3-66" name="__codelineno-3-66" href="#__codelineno-3-66"></a>if __name__ == &quot;__main__&quot;:
+<a id="__codelineno-3-67" name="__codelineno-3-67" href="#__codelineno-3-67"></a>    main()
 </code></pre></div>
-<p><em>注：此配置能让 Linux 直接共享 Windows 的网络代理，极大提升了后续拉取 GitHub 代码的速度。</em></p>
-<h2 id="miniconda">三、 环境管理：Miniconda 与源优化</h2>
-<p>为了隔离不同项目的依赖，我使用 Miniconda 进行环境管理。</p>
-<p><strong>1. 安装 Miniconda</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>~/miniconda3
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>wget<span class="w"> </span>https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh<span class="w"> </span>-O<span class="w"> </span>~/miniconda3/miniconda.sh
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>bash<span class="w"> </span>~/miniconda3/miniconda.sh<span class="w"> </span>-b<span class="w"> </span>-u<span class="w"> </span>-p<span class="w"> </span>~/miniconda3
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>rm<span class="w"> </span>-rf<span class="w"> </span>~/miniconda3/miniconda.sh
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>~/miniconda3/bin/conda<span class="w"> </span>init<span class="w"> </span>bash
-</code></pre></div>
-<p>重启终端后，命令行前出现 <code>(base)</code> 即安装成功。</p>
-<p><strong>2. 解决 Anaconda ToS 报错</strong>
-由于 Anaconda 官方源更新了服务条款，导致命令行安装报错。我选择切换到更开放的社区源 <strong>conda-forge</strong>。</p>
-<p>执行以下命令直接重写 Conda 配置文件：</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># 强制指定仅使用 conda-forge 源</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;channels:</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="s2">  - conda-forge</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="s2">channel_priority: strict</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="s2">&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>~/.condarc
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="c1"># 清理缓存</span>
-<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>conda<span class="w"> </span>clean<span class="w"> </span>-i<span class="w"> </span>-y
-</code></pre></div>
-<h2 id="_2">四、 深度学习与仿真环境搭建</h2>
-<p>我为机器人项目创建了名为 <code>humanoid</code> 的独立环境。</p>
-<p><strong>1. 创建环境</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>humanoid<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.8<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>--override-channels<span class="w"> </span>-y
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>conda<span class="w"> </span>activate<span class="w"> </span>humanoid
-</code></pre></div>
-<p><strong>2. 安装 PyTorch (GPU版)</strong>
-WSL2 支持显卡直通，无需在 Linux 内安装驱动。直接安装对应 CUDA 11.8 的 PyTorch：</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>pip3<span class="w"> </span>install<span class="w"> </span>torch<span class="w"> </span>torchvision<span class="w"> </span>torchaudio<span class="w"> </span>--index-url<span class="w"> </span>https://download.pytorch.org/whl/cu118
-</code></pre></div>
-<h2 id="_3">五、 验证</h2>
-<p>为了验证环境是否支持 CUDA加速 和 图形化弹窗，编写了以下脚本<code>test_mujoco.py</code>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Python
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>import torch
-<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>import mujoco
-<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>import mujoco.viewer
-<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>import time
-<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>
-<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a># 1. 验证 GPU 加速
-<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>print(&quot;-&quot; * 30)
-<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>print(f&quot;PyTorch Version: {torch.__version__}&quot;)
-<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>print(f&quot;CUDA Available:  {torch.cuda.is_available()}&quot;)
-<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>print(&quot;-&quot; * 30)
-<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>
-<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a># 2. 验证 MuJoCo 可视化 (创建一个红球掉落的场景)
-<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a>xml = &quot;&quot;&quot;
-<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a>&lt;mujoco&gt;
-<a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a>  &lt;worldbody&gt;
-<a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a>    &lt;light name=&quot;top&quot; pos=&quot;0 0 1&quot;/&gt;
-<a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a>    &lt;geom name=&quot;floor&quot; type=&quot;plane&quot; size=&quot;1 1 0.1&quot;/&gt;
-<a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a>    &lt;body name=&quot;box&quot; pos=&quot;0 0 1&quot;&gt;
-<a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a>      &lt;joint type=&quot;free&quot;/&gt;
-<a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a>      &lt;geom type=&quot;sphere&quot; size=&quot;0.1&quot; rgba=&quot;1 0 0 1&quot;/&gt;
-<a id="__codelineno-8-23" name="__codelineno-8-23" href="#__codelineno-8-23"></a>    &lt;/body&gt;
-<a id="__codelineno-8-24" name="__codelineno-8-24" href="#__codelineno-8-24"></a>  &lt;/worldbody&gt;
-<a id="__codelineno-8-25" name="__codelineno-8-25" href="#__codelineno-8-25"></a>&lt;/mujoco&gt;
-<a id="__codelineno-8-26" name="__codelineno-8-26" href="#__codelineno-8-26"></a>&quot;&quot;&quot;
-<a id="__codelineno-8-27" name="__codelineno-8-27" href="#__codelineno-8-27"></a>model = mujoco.MjModel.from_xml_string(xml)
-<a id="__codelineno-8-28" name="__codelineno-8-28" href="#__codelineno-8-28"></a>data = mujoco.MjData(model)
-<a id="__codelineno-8-29" name="__codelineno-8-29" href="#__codelineno-8-29"></a>
-<a id="__codelineno-8-30" name="__codelineno-8-30" href="#__codelineno-8-30"></a>print(&quot;正在启动仿真窗口...&quot;)
-<a id="__codelineno-8-31" name="__codelineno-8-31" href="#__codelineno-8-31"></a>with mujoco.viewer.launch_passive(model, data) as viewer:
-<a id="__codelineno-8-32" name="__codelineno-8-32" href="#__codelineno-8-32"></a>    start = time.time()
-<a id="__codelineno-8-33" name="__codelineno-8-33" href="#__codelineno-8-33"></a>    while viewer.is_running():
-<a id="__codelineno-8-34" name="__codelineno-8-34" href="#__codelineno-8-34"></a>        step_start = time.time()
-<a id="__codelineno-8-35" name="__codelineno-8-35" href="#__codelineno-8-35"></a>        mujoco.mj_step(model, data)
-<a id="__codelineno-8-36" name="__codelineno-8-36" href="#__codelineno-8-36"></a>        viewer.sync()
-<a id="__codelineno-8-37" name="__codelineno-8-37" href="#__codelineno-8-37"></a>        time_until_next_step = model.opt.timestep - (time.time() - step_start)
-<a id="__codelineno-8-38" name="__codelineno-8-38" href="#__codelineno-8-38"></a>        if time_until_next_step &gt; 0:
-<a id="__codelineno-8-39" name="__codelineno-8-39" href="#__codelineno-8-39"></a>            time.sleep(time_until_next_step)
-</code></pre></div>
-执行 <code>python test_mujoco.py</code> 后：
-1.终端输出 <code>CUDA Available: True</code>
-2.桌面成功弹出一个仿真窗口，显示红球自由落体
-<img alt="" src="../2025-12-11-23-38-01.png" /></p>
+在终端中输入<code>nano test_arm_simulation.py</code>，然后把上面这段代码粘贴进去，然后<code>Ctrl X</code>，然后<code>Y</code>确定，然后<code>Enter</code>保存
+在环境中，输入<code>python test_arm_simulation.py</code>以运行
+然后发现出现如图窗口
+<img alt="" src="../2025-12-13-00-54-35.png" />
+终端显示
+<img alt="" src="../2025-12-13-00-57-20.png" />
+则验证成功</p>
+<h2 id="_3">四、遇到的问题</h2>
+<p>在仿真窗口只能利用滚轮放大缩小，按理来说应该可以利用左键平移，但是不行，可能是输入命令有冲突，暂时没有解决，打算在仿真开始后遇到再解决</p>
 
 
 
