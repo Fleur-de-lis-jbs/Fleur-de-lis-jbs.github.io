@@ -16,6 +16,8 @@
         <link rel="prev" href="../2025.12.11-%E5%A6%82%E4%BD%95%E5%8F%91%E5%B8%83%E5%8D%9A%E5%AE%A2/">
       
       
+        <link rel="next" href="../2025.12.14-%E5%BC%80%E5%A7%8B%E8%AE%BA%E6%96%87%E5%A4%8D%E7%8E%B0/">
+      
       
         
       
@@ -575,6 +577,118 @@
   
   
     <li class="md-nav__item">
+      <a href="../2025.12.14-%E5%BC%80%E5%A7%8B%E8%AE%BA%E6%96%87%E5%A4%8D%E7%8E%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    开始读第一篇论文并准备复现
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2025.12.15-%E5%B8%B8%E7%94%A8%E7%9A%84%E7%BB%88%E7%AB%AF%E6%93%8D%E4%BD%9C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    常用的Linux终端操作
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2025.12.16-%E9%98%85%E8%AF%BB%20%E5%85%B3%E4%BA%8E%E9%AB%98%E6%95%88%E8%A7%86%E8%A7%89-%E8%AF%AD%E8%A8%80-%E8%A1%8C%E5%8A%A8%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%BB%BC%E8%BF%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    阅读 关于高效视觉-语言-行动模型的综述
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2025.12.18-%E9%98%85%E8%AF%BB%20%E8%BF%88%E5%90%91%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E7%9A%84%E7%BB%9F%E4%B8%80%E7%90%86%E8%A7%A3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    阅读综述 迈向机器人操作的统一理解
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../.." class="md-nav__link">
         
   
@@ -703,104 +817,109 @@
 选择（1）中科大镜像源</p>
 <p>脚本安装的是 ROS 2 (Humble)，而非旧版ROS 1。安装完成后，脚本已自动帮我把环境变量配置写入 ~/.bashrc</p>
 <h2 id="_1">二、创建环境以及基础库的安装</h2>
-<p>利用已经下载好的miniconda管理环境
-<code># 创建环境conda create -n humanoid python=3.8</code>
-然后激活环境
-<code>conda activate humanoid</code>
-安装torch等基础库
-<code>pip install numpy torch torchvision</code>
-安装pybullet
-<code>pip install pybullet</code>
-安装底层图形库
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo apt-get update
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo apt-get install -y libgl1-mesa-glx libglib2.0-0
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>利用已经下载好的miniconda管理环境
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="c1"># 创建环境</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>humanoid<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.8
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>然后激活环境
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>conda<span class="w"> </span>activate<span class="w"> </span>humanoid
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>安装torch等基础库
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>pip<span class="w"> </span>install<span class="w"> </span>numpy<span class="w"> </span>torch<span class="w"> </span>torchvision
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>安装pybullet
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>pip<span class="w"> </span>install<span class="w"> </span>pybullet
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>安装底层图形库
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>update
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>libgl1-mesa-glx<span class="w"> </span>libglib2.0-0
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>验证功能
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>import<span class="w"> </span>pybullet<span class="w"> </span>as<span class="w"> </span>p
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>print<span class="o">(</span>p.getAPIVersion<span class="o">())</span><span class="w"> </span><span class="c1"># 能打印出版本号即成功</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>环境最终校验
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;=== 系统与Python ===&quot;</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>lsb_release<span class="w"> </span>-d
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>python3<span class="w"> </span>--version
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;\n=== 关键Python库 ===&quot;</span>
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>pip<span class="w"> </span>list<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s2">&quot;(numpy|torch|pybullet)&quot;</span>
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;\n=== ROS 2 环境 ===&quot;</span>
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="nb">echo</span><span class="w"> </span><span class="nv">$ROS_DISTRO</span>
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>ros2<span class="w"> </span>--version<span class="w"> </span><span class="m">2</span>&gt;/dev/null<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;ROS 2 OK&quot;</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;ROS 2 Not Found&quot;</span>
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;\n=== PyBullet 测试 ===&quot;</span>
+<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import pybullet as p; print(&#39;PyBullet API Version:&#39;, p.getAPIVersion())&quot;</span>
+<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>
+<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>输出都正常则配置完毕
 </code></pre></div>
-验证功能
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>import pybullet as p
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>print(p.getAPIVersion()) # 能打印出版本号即成功
-</code></pre></div>
-环境最终校验
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>echo &quot;=== 系统与Python ===&quot;
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>lsb_release -d
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>python3 --version
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>echo -e &quot;\n=== 关键Python库 ===&quot;
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>pip list | grep -E &quot;(numpy|torch|pybullet)&quot;
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>echo -e &quot;\n=== ROS 2 环境 ===&quot;
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>echo $ROS_DISTRO
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>ros2 --version 2&gt;/dev/null &amp;&amp; echo &quot;ROS 2 OK&quot; || echo &quot;ROS 2 Not Found&quot;
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>echo -e &quot;\n=== PyBullet 测试 ===&quot;
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>python3 -c &quot;import pybullet as p; print(&#39;PyBullet API Version:&#39;, p.getAPIVersion())&quot;
-</code></pre></div>
-输出都正常则配置完毕</p>
 <h2 id="_2">三、编写一个仿真脚本已验证功能</h2>
 <p>我一开始是利用ai写的脚本，想要调用一个UR5的机械臂，但是pybullet自带的data库里没有UR5，于是改用调用kuka_iiwa
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>import pybullet as p
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>import pybullet_data
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>import time
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>import numpy as np
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>def main():
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    print(&quot;=&quot;*60)
-<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    print(&quot;开始最终仿真环境验收测试&quot;)
-<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    print(&quot;=&quot;*60)
-<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>
-<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>    # 1. 连接引擎，兼容无图形界面情况
-<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>    try:
-<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>        physicsClient = p.connect(p.GUI)
-<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>        print(&quot;[INFO] 图形模式 (GUI) 已启动。&quot;)
-<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>    except Exception:
-<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>        print(&quot;[INFO] 图形模式失败，切换到直接计算模式 (DIRECT)。&quot;)
-<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>        physicsClient = p.connect(p.DIRECT)
-<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>
-<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>    # 2. 配置路径和场景
-<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>    p.setAdditionalSearchPath(pybullet_data.getDataPath())
-<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>    p.setGravity(0, 0, -9.8)
-<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>    p.loadURDF(&quot;plane.urdf&quot;)
-<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>    print(&quot;[INFO] 地面加载完成。&quot;)
-<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>
-<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>    # 3. 加载一个确定存在的机器人模型
-<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>    robot_urdf = &quot;kuka_iiwa/model.urdf&quot;  # 核心：使用已验证存在的模型
-<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>    print(f&quot;[INFO] 正在加载模型: {robot_urdf}&quot;)
-<a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a>    robot_id = p.loadURDF(robot_urdf, basePosition=[0, 0, 0])
-<a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a>    num_joints = p.getNumJoints(robot_id)
-<a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a>    print(f&quot;[SUCCESS] 模型加载成功！关节数: {num_joints}&quot;)
-<a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a>
-<a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a>    # 4. 进行简单的运动测试
-<a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a>    print(&quot;[INFO] 开始随机运动测试...&quot;)
-<a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a>    for _ in range(100):
-<a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a>        for j in range(num_joints):
-<a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a>            if p.getJointInfo(robot_id, j)[2] != p.JOINT_FIXED:
-<a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a>                target = np.random.uniform(-1.0, 1.0)
-<a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a>                p.setJointMotorControl2(robot_id, j,
-<a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a>                                        p.POSITION_CONTROL,
-<a id="__codelineno-3-40" name="__codelineno-3-40" href="#__codelineno-3-40"></a>                                        targetPosition=target,
-<a id="__codelineno-3-41" name="__codelineno-3-41" href="#__codelineno-3-41"></a>                                        force=50)
-<a id="__codelineno-3-42" name="__codelineno-3-42" href="#__codelineno-3-42"></a>        p.stepSimulation()
-<a id="__codelineno-3-43" name="__codelineno-3-43" href="#__codelineno-3-43"></a>        time.sleep(1./240.)
-<a id="__codelineno-3-44" name="__codelineno-3-44" href="#__codelineno-3-44"></a>
-<a id="__codelineno-3-45" name="__codelineno-3-45" href="#__codelineno-3-45"></a>    # 5. 保存测试结果截图（即使无GUI也尝试）
-<a id="__codelineno-3-46" name="__codelineno-3-46" href="#__codelineno-3-46"></a>    print(&quot;[INFO] 测试完成，尝试保存截图...&quot;)
-<a id="__codelineno-3-47" name="__codelineno-3-47" href="#__codelineno-3-47"></a>    try:
-<a id="__codelineno-3-48" name="__codelineno-3-48" href="#__codelineno-3-48"></a>        view_matrix = p.computeViewMatrixFromYawPitchRoll(
-<a id="__codelineno-3-49" name="__codelineno-3-49" href="#__codelineno-3-49"></a>            cameraTargetPosition=[0,0,0.5], distance=1.5, yaw=60, pitch=-30, roll=0, upAxisIndex=2)
-<a id="__codelineno-3-50" name="__codelineno-3-50" href="#__codelineno-3-50"></a>        proj_matrix = p.computeProjectionMatrixFOV(fov=60, aspect=1.33, nearVal=0.1, farVal=100.0)
-<a id="__codelineno-3-51" name="__codelineno-3-51" href="#__codelineno-3-51"></a>        width, height = 640, 480
-<a id="__codelineno-3-52" name="__codelineno-3-52" href="#__codelineno-3-52"></a>        img = p.getCameraImage(width, height, view_matrix, proj_matrix,
-<a id="__codelineno-3-53" name="__codelineno-3-53" href="#__codelineno-3-53"></a>                               renderer=p.ER_BULLET_HARDWARE_OPENGL)
-<a id="__codelineno-3-54" name="__codelineno-3-54" href="#__codelineno-3-54"></a>        # 此处可添加用PIL或OpenCV保存img[2]（RGB数组）的代码
-<a id="__codelineno-3-55" name="__codelineno-3-55" href="#__codelineno-3-55"></a>        print(f&quot;[SUCCESS] 截图已渲染，可保存。&quot;)
-<a id="__codelineno-3-56" name="__codelineno-3-56" href="#__codelineno-3-56"></a>    except Exception as e:
-<a id="__codelineno-3-57" name="__codelineno-3-57" href="#__codelineno-3-57"></a>        print(f&quot;[NOTE] 未保存截图: {e}&quot;)
-<a id="__codelineno-3-58" name="__codelineno-3-58" href="#__codelineno-3-58"></a>
-<a id="__codelineno-3-59" name="__codelineno-3-59" href="#__codelineno-3-59"></a>    # 6. 清理与退出
-<a id="__codelineno-3-60" name="__codelineno-3-60" href="#__codelineno-3-60"></a>    p.disconnect()
-<a id="__codelineno-3-61" name="__codelineno-3-61" href="#__codelineno-3-61"></a>    print(&quot;=&quot;*60)
-<a id="__codelineno-3-62" name="__codelineno-3-62" href="#__codelineno-3-62"></a>    print(&quot;环境验收测试全部通过！&quot;)
-<a id="__codelineno-3-63" name="__codelineno-3-63" href="#__codelineno-3-63"></a>    print(&quot;你的机器人仿真环境已完全就绪。&quot;)
-<a id="__codelineno-3-64" name="__codelineno-3-64" href="#__codelineno-3-64"></a>    print(&quot;=&quot;*60)
-<a id="__codelineno-3-65" name="__codelineno-3-65" href="#__codelineno-3-65"></a>
-<a id="__codelineno-3-66" name="__codelineno-3-66" href="#__codelineno-3-66"></a>if __name__ == &quot;__main__&quot;:
-<a id="__codelineno-3-67" name="__codelineno-3-67" href="#__codelineno-3-67"></a>    main()
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>import pybullet as p
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>import pybullet_data
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>import time
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>import numpy as np
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>def main():
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    print(&quot;=&quot;*60)
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    print(&quot;开始最终仿真环境验收测试&quot;)
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    print(&quot;=&quot;*60)
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>    # 1. 连接引擎，兼容无图形界面情况
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>    try:
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>        physicsClient = p.connect(p.GUI)
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>        print(&quot;[INFO] 图形模式 (GUI) 已启动。&quot;)
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>    except Exception:
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>        print(&quot;[INFO] 图形模式失败，切换到直接计算模式 (DIRECT)。&quot;)
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>        physicsClient = p.connect(p.DIRECT)
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>    # 2. 配置路径和场景
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>    p.setAdditionalSearchPath(pybullet_data.getDataPath())
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>    p.setGravity(0, 0, -9.8)
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>    p.loadURDF(&quot;plane.urdf&quot;)
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>    print(&quot;[INFO] 地面加载完成。&quot;)
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>    # 3. 加载一个确定存在的机器人模型
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>    robot_urdf = &quot;kuka_iiwa/model.urdf&quot;  # 核心：使用已验证存在的模型
+<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>    print(f&quot;[INFO] 正在加载模型: {robot_urdf}&quot;)
+<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a>    robot_id = p.loadURDF(robot_urdf, basePosition=[0, 0, 0])
+<a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a>    num_joints = p.getNumJoints(robot_id)
+<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a>    print(f&quot;[SUCCESS] 模型加载成功！关节数: {num_joints}&quot;)
+<a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a>
+<a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a>    # 4. 进行简单的运动测试
+<a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a>    print(&quot;[INFO] 开始随机运动测试...&quot;)
+<a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a>    for _ in range(100):
+<a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a>        for j in range(num_joints):
+<a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a>            if p.getJointInfo(robot_id, j)[2] != p.JOINT_FIXED:
+<a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a>                target = np.random.uniform(-1.0, 1.0)
+<a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a>                p.setJointMotorControl2(robot_id, j,
+<a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a>                                        p.POSITION_CONTROL,
+<a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a>                                        targetPosition=target,
+<a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a>                                        force=50)
+<a id="__codelineno-1-42" name="__codelineno-1-42" href="#__codelineno-1-42"></a>        p.stepSimulation()
+<a id="__codelineno-1-43" name="__codelineno-1-43" href="#__codelineno-1-43"></a>        time.sleep(1./240.)
+<a id="__codelineno-1-44" name="__codelineno-1-44" href="#__codelineno-1-44"></a>
+<a id="__codelineno-1-45" name="__codelineno-1-45" href="#__codelineno-1-45"></a>    # 5. 保存测试结果截图（即使无GUI也尝试）
+<a id="__codelineno-1-46" name="__codelineno-1-46" href="#__codelineno-1-46"></a>    print(&quot;[INFO] 测试完成，尝试保存截图...&quot;)
+<a id="__codelineno-1-47" name="__codelineno-1-47" href="#__codelineno-1-47"></a>    try:
+<a id="__codelineno-1-48" name="__codelineno-1-48" href="#__codelineno-1-48"></a>        view_matrix = p.computeViewMatrixFromYawPitchRoll(
+<a id="__codelineno-1-49" name="__codelineno-1-49" href="#__codelineno-1-49"></a>            cameraTargetPosition=[0,0,0.5], distance=1.5, yaw=60, pitch=-30, roll=0, upAxisIndex=2)
+<a id="__codelineno-1-50" name="__codelineno-1-50" href="#__codelineno-1-50"></a>        proj_matrix = p.computeProjectionMatrixFOV(fov=60, aspect=1.33, nearVal=0.1, farVal=100.0)
+<a id="__codelineno-1-51" name="__codelineno-1-51" href="#__codelineno-1-51"></a>        width, height = 640, 480
+<a id="__codelineno-1-52" name="__codelineno-1-52" href="#__codelineno-1-52"></a>        img = p.getCameraImage(width, height, view_matrix, proj_matrix,
+<a id="__codelineno-1-53" name="__codelineno-1-53" href="#__codelineno-1-53"></a>                               renderer=p.ER_BULLET_HARDWARE_OPENGL)
+<a id="__codelineno-1-54" name="__codelineno-1-54" href="#__codelineno-1-54"></a>        # 此处可添加用PIL或OpenCV保存img[2]（RGB数组）的代码
+<a id="__codelineno-1-55" name="__codelineno-1-55" href="#__codelineno-1-55"></a>        print(f&quot;[SUCCESS] 截图已渲染，可保存。&quot;)
+<a id="__codelineno-1-56" name="__codelineno-1-56" href="#__codelineno-1-56"></a>    except Exception as e:
+<a id="__codelineno-1-57" name="__codelineno-1-57" href="#__codelineno-1-57"></a>        print(f&quot;[NOTE] 未保存截图: {e}&quot;)
+<a id="__codelineno-1-58" name="__codelineno-1-58" href="#__codelineno-1-58"></a>
+<a id="__codelineno-1-59" name="__codelineno-1-59" href="#__codelineno-1-59"></a>    # 6. 清理与退出
+<a id="__codelineno-1-60" name="__codelineno-1-60" href="#__codelineno-1-60"></a>    p.disconnect()
+<a id="__codelineno-1-61" name="__codelineno-1-61" href="#__codelineno-1-61"></a>    print(&quot;=&quot;*60)
+<a id="__codelineno-1-62" name="__codelineno-1-62" href="#__codelineno-1-62"></a>    print(&quot;环境验收测试全部通过！&quot;)
+<a id="__codelineno-1-63" name="__codelineno-1-63" href="#__codelineno-1-63"></a>    print(&quot;你的机器人仿真环境已完全就绪。&quot;)
+<a id="__codelineno-1-64" name="__codelineno-1-64" href="#__codelineno-1-64"></a>    print(&quot;=&quot;*60)
+<a id="__codelineno-1-65" name="__codelineno-1-65" href="#__codelineno-1-65"></a>
+<a id="__codelineno-1-66" name="__codelineno-1-66" href="#__codelineno-1-66"></a>if __name__ == &quot;__main__&quot;:
+<a id="__codelineno-1-67" name="__codelineno-1-67" href="#__codelineno-1-67"></a>    main()
 </code></pre></div>
 在终端中输入<code>nano test_arm_simulation.py</code>，然后把上面这段代码粘贴进去，然后<code>Ctrl X</code>，然后<code>Y</code>确定，然后<code>Enter</code>保存
 在环境中，输入<code>python test_arm_simulation.py</code>以运行

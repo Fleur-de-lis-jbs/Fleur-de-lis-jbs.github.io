@@ -10,25 +10,31 @@
         <meta name="author" content="Jiang Le">
       
       
+        <link rel="canonical" href="https://Fleur-de-lis-jbs.github.io/blog/2025.12.15-%E5%B8%B8%E7%94%A8%E7%9A%84%E7%BB%88%E7%AB%AF%E6%93%8D%E4%BD%9C/">
       
+      
+        <link rel="prev" href="../2025.12.14-%E5%BC%80%E5%A7%8B%E8%AE%BA%E6%96%87%E5%A4%8D%E7%8E%B0/">
+      
+      
+        <link rel="next" href="../2025.12.16-%E9%98%85%E8%AF%BB%20%E5%85%B3%E4%BA%8E%E9%AB%98%E6%95%88%E8%A7%86%E8%A7%89-%E8%AF%AD%E8%A8%80-%E8%A1%8C%E5%8A%A8%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%BB%BC%E8%BF%B0/">
       
       
         
       
       
-      <link rel="icon" href="/assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
     
     
       
-        <title>Jiang Le's Lab</title>
+        <title>常用的Linux终端操作 - Jiang Le's Lab</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -47,7 +53,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -71,6 +77,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#linux" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -81,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="/." title="Jiang Le&#39;s Lab" class="md-header__button md-logo" aria-label="Jiang Le's Lab" data-md-component="logo">
+    <a href="../.." title="Jiang Le&#39;s Lab" class="md-header__button md-logo" aria-label="Jiang Le's Lab" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -101,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              常用的Linux终端操作
             
           </span>
         </div>
@@ -202,7 +213,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -219,11 +230,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/blog/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -257,7 +270,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Jiang Le&#39;s Lab" class="md-nav__button md-logo" aria-label="Jiang Le's Lab" data-md-component="logo">
+    <a href="../.." title="Jiang Le&#39;s Lab" class="md-nav__button md-logo" aria-label="Jiang Le's Lab" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -275,7 +288,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -299,26 +312,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -336,7 +354,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -356,7 +374,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -384,7 +402,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/2025.12.11-setup-robot-env/" class="md-nav__link">
+      <a href="../2025.12.11-setup-robot-env/" class="md-nav__link">
         
   
   
@@ -412,7 +430,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/2025.12.11-%E5%A6%82%E4%BD%95%E5%8F%91%E5%B8%83%E5%8D%9A%E5%AE%A2/" class="md-nav__link">
+      <a href="../2025.12.11-%E5%A6%82%E4%BD%95%E5%8F%91%E5%B8%83%E5%8D%9A%E5%AE%A2/" class="md-nav__link">
         
   
   
@@ -440,7 +458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/2025.12.12-ros%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/" class="md-nav__link">
+      <a href="../2025.12.12-ros%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/" class="md-nav__link">
         
   
   
@@ -468,7 +486,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/2025.12.14-%E5%BC%80%E5%A7%8B%E8%AE%BA%E6%96%87%E5%A4%8D%E7%8E%B0/" class="md-nav__link">
+      <a href="../2025.12.14-%E5%BC%80%E5%A7%8B%E8%AE%BA%E6%96%87%E5%A4%8D%E7%8E%B0/" class="md-nav__link">
         
   
   
@@ -493,10 +511,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/blog/2025.12.15-%E5%B8%B8%E7%94%A8%E7%9A%84%E7%BB%88%E7%AB%AF%E6%93%8D%E4%BD%9C/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -512,6 +539,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -524,7 +552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/2025.12.16-%E9%98%85%E8%AF%BB%20%E5%85%B3%E4%BA%8E%E9%AB%98%E6%95%88%E8%A7%86%E8%A7%89-%E8%AF%AD%E8%A8%80-%E8%A1%8C%E5%8A%A8%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%BB%BC%E8%BF%B0/" class="md-nav__link">
+      <a href="../2025.12.16-%E9%98%85%E8%AF%BB%20%E5%85%B3%E4%BA%8E%E9%AB%98%E6%95%88%E8%A7%86%E8%A7%89-%E8%AF%AD%E8%A8%80-%E8%A1%8C%E5%8A%A8%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%BB%BC%E8%BF%B0/" class="md-nav__link">
         
   
   
@@ -552,7 +580,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/2025.12.18-%E9%98%85%E8%AF%BB%20%E8%BF%88%E5%90%91%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E7%9A%84%E7%BB%9F%E4%B8%80%E7%90%86%E8%A7%A3/" class="md-nav__link">
+      <a href="../2025.12.18-%E9%98%85%E8%AF%BB%20%E8%BF%88%E5%90%91%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E7%9A%84%E7%BB%9F%E4%B8%80%E7%90%86%E8%A7%A3/" class="md-nav__link">
         
   
   
@@ -580,7 +608,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -625,6 +653,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -637,8 +667,65 @@
               
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+
+<h1 id="linux">常用的Linux终端操作</h1>
+<p>1.
+ls (List)</p>
+<p>鼠标动作： 眼睛看一眼当前文件夹里有什么。
+怎么用： 直接输 ls。想看详细点（文件大小）就输 ls -lh。
+2.
+cd (Change Directory)</p>
+<p>鼠标动作： 双击进入文件夹 / 点击“返回上一级”。
+怎么用：
+进文件夹：cd act
+回家（用户主目录）：cd ~ (波浪号代表家)
+返回上一级：cd .. (两个点代表上面)
+3.
+mkdir (Make Directory)</p>
+<p>鼠标动作： 右键 -&gt; 新建文件夹。
+怎么用： mkdir new_folder
+4.
+mv (Move) 和 cp (Copy)</p>
+<p>鼠标动作： 剪切粘贴 / 复制粘贴。
+怎么用：
+改名/移动：mv old.txt new.txt
+复制：cp file.txt copy_of_file.txt
+5.
+rm (Remove)</p>
+<p>鼠标动作： 右键 -&gt; 删除 -&gt; 清空回收站。
+警告： Linux 没有回收站！删了就真没了！
+怎么用： 删除文件 rm file.txt。删除文件夹 rm -r folder_name
+6.
+Tab 键（自动补全）—— 你的救命稻草</p>
+<p>永远不要把长长的文件名完整打出来。
+比如你想进 sim_transfer_cube_scripted，你只需要输 cd sim 然后猛按 Tab 键，电脑会自动帮你补全剩下的。如果不补全，说明你前面打错了，或者有重名的。
+7.
+↑ 上箭头（历史记录）</p>
+<p>你刚才输过那串超长的训练命令，千万别再打一遍。
+按一下 上箭头，上一条命令就出来了。按两下，上上条就出来了。
+8.
+Ctrl + C（强制停止）</p>
+<p>程序卡死了？一直在刷屏停不下来？训练不想跑了？
+直接按 Ctrl + C，立刻终止一切。</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -685,12 +772,12 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "/", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "content.code.copy"], "search": "/assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "content.code.copy"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
       
-        <script src="/javascripts/mathjax.js"></script>
+        <script src="../../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
